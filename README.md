@@ -2,7 +2,7 @@
 
 ## Aplicativo para saber se compensa colocar álcool ou gasolina no tanque do carro.
 
-#### Projeto do curso 7192 - Flutter Apps:Álcool ou Gasolina do [balta.io](balta.io).
+#### Projeto do curso 7192 - Flutter Apps:Álcool ou Gasolina do [balta.io](https://balta.io).
 
 **Font**: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display?query=Big)
 
