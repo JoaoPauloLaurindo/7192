@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class LoadingButton extends StatelessWidget {
-  var busy = false;
-  var invert = false;
-  Function func;
   var text = "";
+  var busy = false;
+  var invertColor = false;
+  Function function;
 
   LoadingButton({
-    @required this.busy,
-    @required this.func,
-    @required this.invert,
     @required this.text,
+    @required this.function,
+    @required this.invertColor,
+    @required this.busy,
   });
 
   @override
@@ -24,22 +24,24 @@ class LoadingButton extends StatelessWidget {
             ),
           )
         : Container(
+            width: double.infinity,
             margin: EdgeInsets.all(30),
             height: 60,
-            width: double.infinity,
             decoration: BoxDecoration(
-              color: invert
+              color: invertColor
                   ? Theme.of(context).primaryColor
                   : Colors.white.withOpacity(0.8),
-              borderRadius: BorderRadius.circular(60),
+              borderRadius: BorderRadius.circular(50),
             ),
             child: FlatButton(
-              onPressed: func,
+              onPressed: function,
               child: Text(
                 text,
                 style: TextStyle(
-                  color: invert ? Colors.white : Theme.of(context).primaryColor,
-                  fontSize: 25,
+                  color: invertColor
+                      ? Colors.white.withOpacity(0.8)
+                      : Theme.of(context).primaryColor,
+                  fontSize: 30,
                   fontFamily: "Big Shoulders Display",
                 ),
               ),

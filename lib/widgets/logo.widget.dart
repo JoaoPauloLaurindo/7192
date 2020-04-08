@@ -5,30 +5,22 @@ class Logo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        SizedBox(
-          height: 60,
+        SizedBox(height: 60),
+        Image.asset(
+          "assets/images/aog-white.png",
+          height: 100,
         ),
-        Container(
-          child: Image.asset(
-            "assets/images/aog-white.png",
-            height: 80,
-          ),
-        ),
-        SizedBox(
-          height: 10,
-        ),
+        SizedBox(height: 25),
         Text(
           "Álcool ou Gasolina",
           style: TextStyle(
             color: Colors.white,
-            fontSize: 25,
+            fontSize: 30,
             fontFamily: "Big Shoulders Display",
           ),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
-          height: 20,
-        ),
+        SizedBox(height: 20),
       ],
     );
   }

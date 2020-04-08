@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'loading-button.widget.dart';
 
 class Success extends StatelessWidget {
-  var result = "";
-  Function reset;
+  var text = "";
+  Function function;
 
   Success({
-    @required this.result,
-    @required this.reset,
+    @required this.function,
+    @required this.text,
   });
 
   @override
@@ -21,26 +21,22 @@ class Success extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          SizedBox(
-            height: 50,
-          ),
+          SizedBox(height: 50),
           Text(
-            result,
+            text,
             style: TextStyle(
               color: Theme.of(context).primaryColor,
-              fontSize: 40,
               fontFamily: "Big Shoulders Display",
+              fontSize: 40,
             ),
             textAlign: TextAlign.center,
           ),
-          SizedBox(
-            height: 20,
-          ),
+          SizedBox(height: 20),
           LoadingButton(
-            busy: false,
-            func: reset,
-            invert: true,
             text: "CALCULAR NOVAMENTE",
+            function: function,
+            invertColor: true,
+            busy: false,
           ),
         ],
       ),

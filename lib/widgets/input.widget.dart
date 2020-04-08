@@ -20,27 +20,24 @@ class Input extends StatelessWidget {
           child: Text(
             label,
             style: TextStyle(
-              color: Colors.white,
-              fontSize: 35,
-              fontFamily: "Big Shoulders Display",
-            ),
+                color: Colors.white,
+                fontSize: 35,
+                fontFamily: "Big Shoulders Display"),
           ),
         ),
-        SizedBox(
-          width: 20,
-        ),
+        SizedBox(width: 15),
         Expanded(
           child: TextFormField(
-            controller: ctrl,
             keyboardType: TextInputType.number,
             style: TextStyle(
               color: Colors.white,
-              fontSize: 45,
+              fontSize: 40,
               fontFamily: "Big Shoulders Display",
             ),
             decoration: InputDecoration(
               border: InputBorder.none,
             ),
+            controller: ctrl,
           ),
         ),
       ],
