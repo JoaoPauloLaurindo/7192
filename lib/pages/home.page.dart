@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
         if (res >= 0.7) {
           _resultText = "Compensa utilizar Gasolina!";
         } else {
-          _resultText = "Conpensa utilizar Álcool!";
+          _resultText = "Compensa utilizar Álcool!";
         }
 
         _busy = false;
